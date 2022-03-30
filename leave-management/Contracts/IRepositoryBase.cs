@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Query;
 
 namespace leave_management.Contracts
 {
@@ -15,4 +17,5 @@ namespace leave_management.Contracts
         Task<bool> Delete(T entity);
         Task<bool> Save();
     }
+
 }
